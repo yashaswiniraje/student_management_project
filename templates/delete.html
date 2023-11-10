@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Students</title>
+</head>
+<body>
+    {% extends "base.html" %}
+
+    {% block content %}
+        <h1>Delete Students</h1>
+        <form method="post">
+            {% for student in students %}
+                <div>
+                    <input type="checkbox" name="student_id" value="{{ student.tele }}">
+                    {{ student.First_Name }} {{ student.Last_Name }} ({{ student.tele }})
+                </div>
+            {% endfor %}
+            <button type="submit">Delete selected students</button>
+        </form>
+    {% endblock %}
+</body>
+</html>

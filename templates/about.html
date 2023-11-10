@@ -1,0 +1,304 @@
+<style>
+    /* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+main {
+    margin: 20px 0;
+}
+
+.about-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    margin-bottom: 10px;
+}
+
+.mission-vision {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mission-vision h2 {
+    margin-bottom: 10px;
+}
+
+.mission, .vision {
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+#about_title{
+ background-color: red;
+ color:white;
+}
+
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About College</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="about_title">Welcome to MET Bhujbal Knowledge City</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section class="about-section">
+            <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="https://metbhujbalknowledgecity.ac.in/wp-content/uploads/2020/03/2-1024x680.jpg" style="width:100%">
+
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="https://www.targetadmission.com/img/colleges/newc/6687-379443.jpg" style="width:100%">
+
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="https://4.bp.blogspot.com/-Bp2g3aqy2DA/UuKptm3LknI/AAAAAAAAAwg/UFhhkX6V7fM/s1600/Met+bkc+nashik.jpg" style="width:100%">
+
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+           <center><h2>About Us</h2></center>
+            <p>
+                MET BKC is a leading institution dedicated to providing high-quality education and fostering academic excellence. With a rich history spanning several decades, we have consistently upheld our commitment to shaping bright minds and preparing them for a successful future.
+            </p>
+            <p>
+                Our campus is equipped with state-of-the-art facilities, experienced faculty members, and a vibrant learning environment. We offer a wide range of programs and courses, ensuring that each student finds the right path to their desired career.
+            </p>
+        </section>
+
+
+
+        <section class="mission-vision">
+
+            <div class="mission">
+               <center> <h3>Mission</h3></center>
+                <ul>
+                    <li> To empower our students with knowledge, skills, and values that will enable them to contribute positively to society and achieve their goals.</li>
+                    <li>Preparing Graduates capable enough to practice effectively and responsibly to technological changes and pursue advanced engineering.</li>
+                    <li>Inculcate applied research to support and contribute to the social and economic well-being of citizens and organizations in nearby region.</li>
+                    <li>Cultivate the entrepreneurial spirit and linkage of engineering education and business for technology commercialization.</li>
+                    <li>Evolve thoughtfully to the changing needs of industry and surrounding world.</li>
+                </ul>
+
+
+            </div>
+            <div class="vision">
+                <center><h3>Vision</h3></center>
+                <ul>
+                  <li>  To become a global center of excellence in education, fostering innovation, research, and holistic development.</li>
+                  <li>   To develop Institute as a Centre of Excellence for developing globally accepted professionals having application orientation, lifelong learning approach towards socio-economic growth of stake holders and the Society as a whole.</li>
+               </ul>
+            </div>
+        </section>
+        <!-- Add more sections as needed -->
+    </main>
+    <footer>
+        <p>@Copyright 2023. MET Bhujbal Knowledge City, All rights reserved.</p>
+    </footer>
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>

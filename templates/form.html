@@ -1,0 +1,171 @@
+
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Student Registration Form</title>
+
+  <style>
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(212, 139, 244, 0.26);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 350px;
+    height: 500px;
+    box-shadow: 0 0 40px 20px rgba(0,0,0,0.26);
+    perspective: 1000px;
+   color: #fff;
+
+}
+.input-box:hover{
+background-color: white;
+color: black;
+font-family: 'Courier New', Courier, monospace;
+font-size: larger;
+font-weight: bolder;
+}
+
+.input-box{
+    width: 100%;
+    background: transparent;
+    border: 3px solid #fff;
+    margin: 5px 0;
+    border-radius:20px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color:white;
+    position: relative;
+    height:29px;
+    transition: transform 1.3s;
+    transform-style: preserve-3d;
+}
+#reg{
+    text-align: center;color: black;
+}
+button{
+    width: 100%;
+    background: transparent;
+    border: 1px solid white;
+    margin: 15px 0 10px;
+    height: 32px;
+    font-size: 10px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+.cardfront{
+
+    position:absolute;
+    width: 100%;
+    height:100%;
+    background-position: center;
+    background-size: contain;
+    background-image:linear-gradient(hotpink,skyblue,skyblue,hotpink);
+    padding: 10px;
+    box-sizing: border-box;
+}
+.text-input{
+    color: black;
+}
+
+  </style>
+</head>
+<body id="formbody">
+  <div class="container">
+    <div class="card">
+        <div class="inner-box" id="card">
+            <div class="cardfront">
+
+<form action="/form" method="post">
+
+<h3 id="reg">EVENT REGISTRATION FORM</h3>
+
+
+
+<table align="center" cellpadding = "10">
+<!----- First Name ---------------------------------------------------------->
+<tr>
+<td class="text-input" >FIRST NAME</td>
+<td><input type="text" class="input-box" name="First_Name" maxlength="30"/>
+</td>
+</tr>
+
+<!----- Last Name ---------------------------------------------------------->
+<tr>
+<td class="text-input" >LAST NAME</td>
+<td><input type="text" class="input-box" name="Last_Name" maxlength="30"/>
+
+</td>
+</tr>
+
+<!-----------DEPARTMEMT------------------------->
+<tr>
+<td class="text-input">DEPARTMENT</td>
+<td><input type="text"class="input-box" name="DEPARTMENT" maxlength="30"/>
+
+</td>
+</tr>
+
+<!----- EVENT-------------------------------------------------------->
+
+<!----- Date Of Birth -------------------------------------------------------->
+<tr>
+<td class="text-input">INTRESTED EVENT</td>
+
+<td>
+<select name="EVENT" id="EVENT">
+<option value="-1">EVENTS:</option>
+<option value="DANCE">DANCE</option>
+<option value="SINGING">SINGING</option>
+<option value="MET GOT TALENT">MET GOT TALENT</option>
+<option value="SPORTS">SPORTS</option>
+<option value="DRAMA">DRAMA</option>
+<option value="FASHION SHOW">FASHION SHOW</option>
+
+
+
+</td>
+</tr>
+<!----- Email Id ---------------------------------------------------------->
+<tr>
+<td class="text-input">Email_Id</td>
+<td><input type="text" class="input-box" name="Email_id" maxlength="50"/>
+
+</td>
+</tr>
+
+<!----- Mobile Number ---------------------------------------------------------->
+<tr>
+<td class="text-input">MOBILE NUMBER</td>
+<td>
+<input type="text" class="input-box"  name="tele" maxlength="10" />
+</td>
+</tr>
+
+<!----- Submit and Reset ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+  <button type="submit" class="submin-btn" >SUBMIT</button>
+</td>
+</tr>
+</table>
+
+</form>
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

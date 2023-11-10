@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Update Student</title>
+</head>
+
+<body>
+  <form method="POST" action="{{ url_for('update', tele=entry.tele) }}">
+    <label for="First_Name">First_Name:</label>
+    <input type="text" id="First_Name" name="First_Name" value="{{ entry.First_Name }}" maxlength= "30"/>
+    <br>
+
+    <label for="Last_Name">Last_Name:</label>
+    <input type="text" id="Last_Name" name="Last_Name" value="{{ entry.Last_Name }}" maxlength= "30"/>
+    <br>
+
+    <label for="DEPARTMENT">Department:</label>
+    <input type="text" id="DEPARTMENT" name="DEPARTMENT" value="{{ entry.DEPARTMENT }}" maxlength= "30"/>
+    <br>
+
+    <label for="EVENT">EVENTS:</label>
+    <select name="EVENT" id="EVENT">
+      <option value="-1">EVENTS:</option>
+      <option value="DANCE">DANCE</option>
+      <option value="SINGING">SINGING</option>
+      <option value="MET_GOT_TALENT">MET_GOT_TALENT</option>
+      <option value="SPORTS">SPORTS</option>
+      <option value="DRAMA">DRAMA</option>
+      <option value="FASHION SHOW">FASHION SHOW</option>
+    </select>
+    <br>
+
+    <label for="Email_id">Email:</label>
+    <input type="text" id="Email_id" name="Email_id" value="{{ entry.Email_id }}" maxlength= "30"/">
+    <br>
+
+    <label for="tele">Mobile_No:</label>
+    <input type="text" id="tele" name="tele" value="{{ entry.tele }}" maxlength= "10"/>
+    <button type="submit">Update</button>
+  </form>
+  </form>
+</body>
+
+</html>

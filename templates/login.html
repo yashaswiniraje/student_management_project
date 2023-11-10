@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+#admin{
+
+    height: 450px;
+    width: 400px;
+    border-radius: 20px;
+    background-image: linear-gradient(rgb(11, 6, 34),rgb(0, 195, 255),rgb(34, 106, 150),rgb(1, 11, 12));
+    text-align: center;
+    box-shadow: black solid 10px;
+    margin: 170px 10px 20px 530px;
+
+}
+
+.inputbox:hover{
+   margin: 10px 50px;
+  color: black;
+    border:black solid 2px;
+    background-color: white;
+    border-radius: 20px;
+    font-size: medium;
+    padding-top: 10px 10px 10px 10px;
+}
+.inputbox{
+   margin: 10px 50px;
+
+    border:white solid 2px;
+    background-color: black;
+    border-radius: 20px;
+    color:white;
+    font-size: medium;
+    padding-top: 10px 10px 10px 10px;
+}
+#utext{
+    padding-top: 50px;
+
+}
+#login{
+    margin-top: 10px;
+    color: aliceblue;
+}
+button{
+   margin: 100px 500px 600px 170px;
+   color: white;
+   background-color: black;
+   border: white solid 3px;
+   padding: 6px;
+   border-radius: 20px;
+}
+
+    </style>
+</head>
+<body>
+ {% if msg %}
+    <div class="msg">{{ msg }}</div>
+    {% endif %}
+    <form method="POST" action="/login">
+        <div id="admin">
+            <center> <h2 id="login" >ADMIN LOGIN</h2></center>
+        <label for="User Name">
+            <h3 id="utext">User Name</h3>
+            <input type="text" name="username" class="inputbox" >
+        </label>
+        <h3>Password</h3>
+        <label for="password">
+            <input type="password" name="password" class="inputbox" >
+        </label>
+        <button type="submit">Submit</button>
+    </div>
+
+    </form>
+
+</body>
+</html>
